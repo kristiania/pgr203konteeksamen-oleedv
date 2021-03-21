@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game History</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<body>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Gamename</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Score</th>
+        <th>Category</th>
+        <tbody id="games"></tbody>
+    </tr>
+</table>
+<hr>
+<br>
+<a href="/index.html">Back</a>
+<script>
+    var games = document.getElementById("games");
+    fetch("/api/games/all")
+        .then(function (result) {
+            return result.text();
+        })
+        .then(function (text) {
+            games.innerHTML = text;
+        });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy!</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<body>
+<form action="/api/games" method="post">
+    <label>
+        Dice:
+        <input name="diceList" type="text">
+    </label>
+    <label>
+        Category:
+        <input id="category" name="categoryName"></input>
+    </label>
+    <label>
+        Player firstname:
+        <input id="playerFirstName" name="playerFirstName"></input>
+    </label>
+    <button>Submit</button>
+</form>
+<hr>
+<br>
+<a href="/index.html">Get back</a>
+<script>
+    const category = document.getElementById("category");
+    fetch("/api/category")
+        .then(function (result) {
+            return result.text();
+        })
+        .then(function (text) {
+            category.innerHTML = text;
+        });
+    const playerFirstName = document.getElementById("playerFirstName");
+    fetch("/api/games")
+        .then(function (result) {
+            return result.text();
+        })
+        .then(function (text) {
+            playerFirstName.innerHTML = text;
+            playerLastName.innerHTML = text;
+        });
+</script>
+</body>
+</html>

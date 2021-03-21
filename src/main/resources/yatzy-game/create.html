@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Game | Yatzy</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<body>
+<h1>Create new game</h1>
+<form action="/api/games" method="POST">
+    <label>Date played: <input name="gameDate" type="date"/></label>
+    <label>Game name: <input name="gameName" type="text"/></label>
+    <label>Player first name: <input name="playerFirstName" type="text"/></label>
+    <label>Player last name: <input name="playerLastName" type="text"/></label>
+    <button>Add</button>
+</form>
+<hr>
+<br>
+<div>
+    <a href="index.html">Return to front page</a>
+</div>
+</body>
+</html>

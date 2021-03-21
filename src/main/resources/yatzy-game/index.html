@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<body>
+<h1>View existing games</h1>
+<div id="data"></div>
+<br>
+<hr>
+<br>
+<div>
+    <a href="create.html">Add new game</a>
+</div>
+<div>
+    <a href="game.html">Play Yatzy</a>
+</div>
+<div>
+    <a href="history.html">Game history</a>
+</div>
+</body>
+<script>
+    fetch("/api/games")
+        .then(function (response) {
+            return response.text();
+        }).then(function (text) {
+        /*
+        Server should return html like this:
+        <p><a href="game.html?ìd=<gameId>"><date>: <game name></a></p>
+        <p><a href="game.html?ìd=<gameId>"><date>: <game name></a></p>
+        <p><a href="game.html?ìd=<gameId>"><date>: <game name></a></p>
+        ...
+        */
+        // Data returned from GET /api/games should contain links to game.html?id=<gameId>
+        document.getElementById("data").innerHTML = text;
+    });
+</script>
+</html>
