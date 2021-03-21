@@ -25,8 +25,8 @@ public class HttpClientTest {
     @Test
     void shouldReadBody() throws IOException {
         HttpClientResponse response = makeEchoRequest("/echo?body=hello+world");
-        assertThat(response.getHeaders()).containsEntry("content-length", "15");
-        assertThat(response.getContentLength()).isEqualTo(15);
+        assertThat(response.getHeaders()).containsEntry("content-length", "11");
+        assertThat(response.getContentLength()).isEqualTo(11);
         assertThat(response.getBody()).isEqualTo("hello world");
     }
 

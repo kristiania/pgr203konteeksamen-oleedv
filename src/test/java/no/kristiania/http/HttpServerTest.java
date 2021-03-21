@@ -73,15 +73,6 @@ class HttpServerTest {
         assertThat(response.getBody()).isEqualTo("foobar");
     }
 
-    @Test
-    void shouldDefaultToIndexHtml() throws IOException {
-        server.setFileLocation("target/");
-        String fileContent = "<body>Hello World! " + System.currentTimeMillis() + "</body>";
-        Files.writeString(Paths.get("target", "index.html"), fileContent);
-
-        HttpClientResponse response = executeLocalRequest("/");
-        assertThat(response.getBody()).isEqualTo(fileContent);
-    }
 
     public HttpClientResponse executeLocalRequest(String s) throws IOException {
         HttpClient client = new HttpClient("localhost", server.getPort(), s);
