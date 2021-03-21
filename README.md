@@ -23,9 +23,9 @@ you will automatically be redirected to play.html. You can now enter inn a dice 
 eg `1,1,2,3,3` and select the player you want to play as. 
 
 ## Questions(In norwegian)
-*1. Hva er test-drevet utvikling? (Hvilke steg inngår i test-drevet utvikling, hva kjennetegner gode tester og hvilke fordeler får du fra testingen?)
-*2. Hva er parprogrammering? (Hvordan fordeler man arbeidet mellom to partnere, hvilke fordeler gir teknikken?)
-*3. Hva er continuous integration? (Hvordan har du benyttet Github Actions til å bygge koden din?)
+#1. Hva er test-drevet utvikling? (Hvilke steg inngår i test-drevet utvikling, hva kjennetegner gode tester og hvilke fordeler får du fra testingen?)
+#2. Hva er parprogrammering? (Hvordan fordeler man arbeidet mellom to partnere, hvilke fordeler gir teknikken?)
+#3. Hva er continuous integration? (Hvordan har du benyttet Github Actions til å bygge koden din?)
 
 `1. Test-drevet utvikling refererer til en stil programmering, bestående av tre aktiviteter: koding, testing (skriving av enhetstester) og design (refactoring).
 Første steg i test-drevet utvikling er å skrive en enkel enhetstest som beskriver et aspekt av programmet. Kjør testen, som mislykkes fordi programmet mangler funksjonen. Så skriver du kode på enklest mulig måte som får testen til å bestå. Så refactorerer du koden.`
