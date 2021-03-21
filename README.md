@@ -22,4 +22,6 @@ Once you have accessed the user interface, you can create a new player. After yo
 you will automatically be redirected to play.html. You can now enter inn a dice squence of ints seperated by commas.
 eg `1,1,2,3,3` and select the player you want to play as. 
 
+### UML diagrams
 
+![Http](https://i.imgur.com/ucp8N4y.png)
