@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/kristiania/pgr203konteeksamen-oleedv/actions/workflows/maven.yml/badge.svg)
+![Build Status](https://github.com/kristiania/pgr203konteeksamen-oleedv/actions/workflows/maven.yml/badge.svg)
 
 # pgr203konteeksamen-oleedv
 pgr203konteeksamen-oleedv created by GitHub Classroom
