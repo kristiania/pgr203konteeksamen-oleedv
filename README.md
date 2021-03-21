@@ -25,3 +25,6 @@ eg `1,1,2,3,3` and select the player you want to play as.
 ### UML diagrams
 
 ![Http](https://i.imgur.com/ucp8N4y.png)
+![Games](https://i.imgur.com/3SX4Y8u.png)
+![Category](https://i.imgur.com/9NitIPH.png)
+![YatzyGame](https://i.imgur.com/RjichrJ.png)
