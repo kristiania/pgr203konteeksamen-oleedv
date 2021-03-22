@@ -6,17 +6,30 @@ pgr203konteeksamen-oleedv created by GitHub Classroom
 ## How to run this project
 
 ### Build and test executable .jar file
+You will need a database of your choosing, I prefer and used PostgreSQL in this project.
+<br>
+<br>
+<u>For PostgreSQL</u>
+* Navigate to https://www.postgresql.org/download/ and select your operating system.
+* Remember your password when installing this will be used later for`dataSource.password`
+* If you are using Jetbrains InteliJ you want to add PostgreSQL to your IDE.
+* Select the Database window from the right sidebar inside InteliJ.
+* Click on the + icon and select Data source > PostgresSQL.
+* Leave everything as is, fill in username (default is `postgres`) and password from ealier.
+* If prompted to download the driver, then do that. 
 
-* Clone the project
+
+* Clone the project from GitHub
 * (Advised) Run `mvn clean`
-* legg til `task-manager.properties file` Create pgr203.properties in dir `src/main/resources/pgr203.properties`
+* Create `pgr203.properties` in dir `src/main/resources/pgr203.properties`
 * Add `dataSource.url = jdbc:postgresql://localhost:5432/` followed up with your PostgreSQL database name
 * Add `dataSource.username =` followed up with your PostgreSQL username
 * Add `dataSource.password =` followed up with your PostgreSQL password
-* Then run `mvn package`
+* Then run `mvn package`, this will create a /target in your dir that contains the executable.
+* If you want to run the project from IDE then run YatzyGame.java
 
 ### To run the code
-* run the command `java -jar target/yatzygame-1.0-SNAPSHOT.jar` in terminal
+* Run the command `java -jar target/yatzygame-1.0-SNAPSHOT.jar` in terminal
 
 ## Functionality
 The program has a user interface that can be visited using localhost: 8080 in the browser.
